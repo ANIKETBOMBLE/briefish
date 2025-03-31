@@ -4,17 +4,21 @@
 	box-sizing: border-box;
 }
 .index_body{
-	width: 100%;
-	height: 100vh;
-	background: scroll;
-	background-color: rgb(250, 250, 250);
+	overflow-x: hidden;
+	background-color: rgba(250, 250, 250, 0.23);
+	background: url(/asstes/back.avif);
+	background-repeat: no-repeat;
+	background-size: contain;
+	
 }
 .nav-bar{
-	background: rgb(209, 67, 15);
+	background: rgba(0, 0, 0, 0);
 	display: flex;
 	justify-content: space-between;
-	border-bottom: solid 3px white;
-	width: 100vw;
+	border-bottom: solid 1px white;
+	width: 80vw;
+	border-radius: 50px;
+	position: sticky;
 }
 #logo{
 	width:150px;
@@ -44,7 +48,7 @@ header{
 	border-radius: 10px;
 	/* background-color: rgb(255, 255, 255); */
 	text-decoration: none;
-	color: black;
+	color: rgb(255, 255, 255);
 }
 .sing_in button{
 padding: 1rem 1rem;
@@ -55,7 +59,11 @@ font-weight: 400;
 font-style: normal;
 }
 .sing_in{
-	padding:  1rem;
+	padding: 0.5rem 1rem 0 0rem; 
+}
+.sing_in>button:hover{
+	color: rgb(228, 128, 6);
+	background-color: rgb(0, 0, 0);
 }
 .login-page {
 	display: flex;
@@ -110,3 +118,77 @@ input{
 	right: 25%;
 	top: 90%;
 }
+
+.left-side-div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	left: 25%;
+	gap: 40px;
+	height: 50vh;
+	width: 50vw;
+	border: solid 2px white; 
+	padding: 1rem;
+	margin-top: 2rem;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	
+}
+.btn{
+	display: flex;
+	position: absolute;
+}
+#trybtn{
+	position: absolute;
+	width: 200px;
+	padding: 1rem;
+	border-radius: 70px;
+	background-color: rgb(229, 124, 5);
+	color: rgb(240, 231, 231);
+	font-family: "Boldonse", system-ui;
+	font-weight: 100;
+	font-style: normal;
+	border: solid rgb(252, 248, 248) 2px;
+}
+
+#trybtn:hover  {
+	color: rgb(217, 134, 44);
+	background-color: black;
+}
+
+.ass{
+	position: absolute;
+	right: -1%;
+	top:92%;
+	border: solid 2px;
+	border-radius: 50%;
+	color: rgb(255, 123, 7);
+	background-color:rgb(255, 255, 255);
+
+}
+
+#fh2{
+	font-size: 30px;
+	color: rgb(72, 181, 240);
+	/* filter: drop-shadow(10px); */
+}
+
+.streams-main{
+	display: flex;
+	margin-top: 8%;
+	gap: 20px;
+	padding: 0 2rem;
+	font-family: "Inconsolata", monospace;
+	font-size: 20px;
+	left: 0;
+	bottom:20px;
+	color: rgb(247, 142, 4);
+	z-index: 2;
+}
+.main-div{
+	height: 100vh;
+	overflow-x: hidden;
+}
+
